@@ -9,14 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file stats.c
- * @brief Application Assignment
+ * @file <Add File Name> 
+ * @brief <Add Brief Description Here >
  *
- * This file contains functions to process data for an embedded system
- * application.
+ * <Add Extended Description Here>
  *
- * @author Bing Hui Lai
- * @date 2024-06-12
+ * @author <Add FirsName LastName>
+ * @date <Add date >
  *
  */
 
@@ -37,80 +36,8 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-  
   /* Statistics and Printing Functions Go Here */
-  print_array(test,SIZE);
-  print_statistics(test,SIZE);
+
 }
 
 /* Add other Implementation File Code Here */
-void print_statistics(unsigned char arr[], int length) {
-  printf("Statistics:\n");
-  printf("Minimum: %d\n",find_minimum(arr,length));
-  printf("Maximum: %d\n",find_maximum(arr,length));
-  printf("Mean: %.2f\n",find_mean(arr,length));
-  printf("Median: %.2f\n",find_median(arr,length));
-  }
-    
-unsigned char find_minimum(unsigned char arr[], int length){
-  unsigned char min = arr[0];
-  for (int i = 1; i < length; i++){
-    if (arr[i] < min){
-      min = arr[i];
-    }
-  }
-  return min;
-}
-
-unsigned char find_maximum(unsigned char arr[], int length){
-  unsigned char max = arr[0];
-  for (int i = 1; i < length; i++){
-    if (arr[i] > max){
-      max = arr[i];
-    }
-  }
-  return max;
-}
-
-void print_array(unsigned char arr[], int length){
-  printf("Array: ");
-  for (int i = 0; i < length; i++){
-    printf("%d ",arr[i]);
-  }
-  printf("\n");
-}
-
-void sort_array(unsigned char arr[], int length){
-  for (int i = 0; i < length -1; i++){
-    for (int j = i + 1 ; j < length; j++){
-      if (arr[i]<arr[j]){
-        unsigned temp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = temp;
-      }
-    }
-  }
-}
-
-float find_median(unsigned char arr[], int length){
-  float median;
-  sort_array(arr, length);
-  if (length % 2 == 0){
-    median = (float)(arr[length/2-1] + arr[length/2])/2;
-  }
-  else {
-    median = arr[length/2];
-  }
-  return median;
-}
-    
-float find_mean(unsigned char arr[], int length){
-  float sum =0;
-  for (int i =0; i < length; i++){
-    sum += arr[i];
-  }
-  return sum/length;
-}
-
-      
-

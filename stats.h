@@ -9,98 +9,32 @@
  *
  *****************************************************************************/
 /**
- * @file stats.h 
- * @brief Header file for application assignment
+ * @file <Add File Name> 
+ * @brief <Add Brief Description Here >
  *
- * This file contains function declarations for functions to process data for an embedded system
- * application.
+ * <Add Extended Description Here>
  *
- * @date 2024-06-12
- * @authorex Bing Hui Lai
+ * @author <Add FirsName LastName>
+ * @date <Add date >
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/**
- * @brief Prints the statistics of an array including minimum, maximum, mean, and median.
- *
- * This function prints the minimum, maximum, mean, and median of the array provided.
- *
- * @param arr The array of unsigned char data
- * @param length The length of the array
- */
-void print_statistics(unsigned char arr[], int length);
+/* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief Prints the array to the screen.
+ * @brief <Add Brief Description of Function Here>
  *
- * Given an array of data and a length, this function prints the array to the screen.
+ * <Add Extended Description Here>
  *
- * @param arr The array of unsigned char data
- * @param length The length of the array
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ * @param <Add InputName> <add description here>
+ *
+ * @return <Add Return Informaiton here>
  */
-void print_array(unsigned char arr[], int length);
 
-/**
- * @brief Returns the median value of the array.
- *
- * Given an array of data and a length, this function returns the median value.
- * The array is sorted before the median is found.
- *
- * @param arr The array of unsigned char data
- * @param length The length of the array
- *
- * @return The median value of the array
- */
-float find_median(unsigned char arr[], int length);
-
-/**
- * @brief Returns the mean value of the array.
- *
- * Given an array of data and a length, this function returns the mean value.
- *
- * @param arr The array of unsigned char data
- * @param length The length of the array
- *
- * @return The mean value of the array
- */
-float find_mean(unsigned char arr[], int length);
-
-/**
- * @brief Returns the maximum value of the array.
- *
- * Given an array of data and a length, this function returns the maximum value.
- *
- * @param arr The array of unsigned char data
- * @param length The length of the array
- *
- * @return The maximum value of the array
- */
-unsigned char find_maximum(unsigned char arr[], int length);
-
-/**
- * @brief Returns the minimum value of the array.
- *
- * Given an array of data and a length, this function returns the minimum value.
- *
- * @param arr The array of unsigned char data
- * @param length The length of the array
- *
- * @return The minimum value of the array
- */
-unsigned char find_minimum(unsigned char arr[], int length);
-
-/**
- * @brief Sorts the array from largest to smallest.
- *
- * Given an array of data and a length, this function sorts the array from largest to smallest.
- * The zeroth element should be the largest value, and the last element (n-1) should be the smallest value.
- *
- * @param arr The array of unsigned char data
- * @param length The length of the array
- */
-void sort_array(unsigned char arr[], int length);
 
 #endif /* __STATS_H__ */
-
